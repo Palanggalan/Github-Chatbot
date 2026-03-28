@@ -327,5 +327,12 @@
     "description": "Configuring Pages output.",
     "keywords": ["deploy", "host website", "github pages", "live site"],
     "content": "1. Go to repository\n2. Click Settings\n3. Go to Pages\n4. Select branch (main)\n5. Click Save\n6. Your live site URL will appear"
+  },
+  {
+    "id": "q48",
+    "feature": "How do I fork a repository?",
+    "description": "Creating a personal copy of someone else's repository under your own account.",
+    "keywords": ["fork", "fork repository", "copy repo", "fork project", "forking", "contribute"],
+    "content": "1. Go to the repository you want to fork\n2. Click the **Fork** button at the top-right\n3. Select your account or organization\n4. GitHub will create a copy of the repository under your account"
   }
 ]
