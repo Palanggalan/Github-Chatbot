@@ -2,337 +2,337 @@
   {
     "id": "q1",
     "feature": "How do I create a GitHub account?",
-    "description": "Steps to create a new GitHub account.",
-    "keywords": ["create account", "sign up", "register", "new account", "join"],
-    "content": "1. Go to GitHub website\n2. Click Sign up\n3. Enter email, username, and password\n4. Verify your email\n5. Log in to your account"
+    "description": "Comprehensive steps to register and set up a new GitHub account for the first time.",
+    "keywords": ["create account", "sign up", "register", "new account", "join", "start"],
+    "content": "**Step-by-step Guide:**\n\n1. Go to the official website: [github.com](https://github.com/)\n2. Click the **Sign up** button located in the top-right corner of the page.\n3. Enter a valid email address when prompted and click **Continue**.\n4. Create a strong, unique password and click **Continue**.\n5. Choose a unique username. This will be publicly visible and act as your GitHub profile URL (e.g., `github.com/your-username`).\n6. Choose your email preference (tick or untick to receive product updates).\n7. Solve the CAPTCHA puzzle to verify you are a real person.\n8. Click **Create account**.\n9. Check your email inbox for a verification code from GitHub, and enter it securely on the webpage to verify your email.\n\n*Pro tip:* Once logged in, consider adding a profile picture and writing a short bio to make your profile stand out to potential collaborators or employers!"
   },
   {
     "id": "q2",
     "feature": "How do I install Git?",
-    "description": "Steps to download and install Git.",
-    "keywords": ["install git", "download git", "setup git", "git installation"],
-    "content": "1. Download Git from the official website\n2. Run the installer\n3. Click Next until installation finishes\n4. Open terminal\n5. Type:\n```bash\ngit --version\n```"
+    "description": "Steps to download and install Git for command-line control of version history.",
+    "keywords": ["install git", "download git", "setup git", "git installation", "get git"],
+    "content": "**Windows:**\n1. Visit the [Git download page for Windows](https://git-scm.com/download/win).\n2. Download the `64-bit Git for Windows Setup`.\n3. Run the downloaded `.exe` installer.\n4. Follow the installation wizard. For beginners, it is highly recommended to leave all settings to their default options and keep clicking **Next** until it installs completely.\n5. To verify installation, open `Command Prompt` or `PowerShell` and type: `git --version`\n\n**Mac/macOS:**\n1. Open your Terminal.\n2. In the terminal window, type: `git --version`\n3. If you don't have it installed already, macOS will automatically prompt you to install the 'Command Line Developer Tools'. Click **Install**.\n\n**Linux (Ubuntu/Debian):**\n1. Open your Terminal and update packages: `sudo apt update`\n2. Install Git: `sudo apt install git-all`\n3. Verify installation: `git --version`"
   },
   {
     "id": "q3",
     "feature": "How do I connect GitHub Desktop to GitHub?",
-    "description": "Steps to sign in and connect GitHub Desktop.",
-    "keywords": ["connect desktop", "login github desktop", "sign in desktop", "link account"],
-    "content": "1. Open GitHub Desktop\n2. Click File → Options → Accounts\n3. Click Sign in to GitHub\n4. Log in to your account\n5. Your account is now connected"
+    "description": "Sign in steps to link the GitHub Desktop graphical application to your web account.",
+    "keywords": ["connect desktop", "login github desktop", "sign in desktop", "link account", "authenticate desktop"],
+    "content": "GitHub Desktop makes committing and pushing much more visual and beginner-friendly.\n\n**Steps to Connect:**\n1. Download and install [GitHub Desktop](https://desktop.github.com/).\n2. Open the GitHub Desktop application.\n3. On Mac, go to the top menu and click **GitHub Desktop → Settings/Preferences**. On Windows, click **File → Options**.\n4. Navigate to the **Accounts** tab on the left sidebar.\n5. Next to the GitHub.com section, click the **Sign In** button.\n6. A pop-up or a browser tab will open requesting authorization. Sign in to your GitHub account on the webpage if you aren't already.\n7. Allow the browser to redirect you back to GitHub Desktop.\n\nSuccess! Your desktop app is now fully authorized to push and pull code from your online repositories without needing manual passwords."
   },
   {
     "id": "q4",
     "feature": "How do I configure Git (username/email)?",
-    "description": "Configure your Git author name and email address.",
-    "keywords": ["configure git", "git config", "set username", "set email", "author identity"],
-    "content": "Run these terminal commands:\n```bash\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your@email.com\"\n```"
+    "description": "Set up your global Git author identity so your commits are properly tracked and attributed to you.",
+    "keywords": ["configure git", "git config", "set username", "set email", "author identity", "whoami"],
+    "content": "Before you start committing code, Git needs to know who you are. This name and email will be permanently attached to your commits in the history logs.\n\nOpen your Terminal (Mac/Linux) or Command Prompt/Git Bash (Windows) and type the following commands exactly as shown:\n\n**1. Set your username:**\n```bash\ngit config --global user.name \"Your First and Last Name\"\n```\n\n**2. Set your email:** *(Important: Use the exact same email address you used to sign up for your GitHub account)*\n```bash\ngit config --global user.email \"your_email@example.com\"\n```\n\n**3. Check your configuration:**\nTo confirm it was set correctly, run:\n```bash\ngit config --list\n```\nLook for `user.name` and `user.email` in the output list."
   },
   {
     "id": "q5",
     "feature": "What is HTTPS vs SSH?",
-    "description": "Difference between accessing repositories via HTTPS vs SSH.",
-    "keywords": ["https", "ssh", "difference", "connection type", "secure", "token"],
-    "content": "**HTTPS** – uses username/password or token (easier for beginners)\n**SSH** – uses SSH keys (more secure, no need to log in repeatedly)"
+    "description": "Understand the two primary authentication methods to clone and push your repositories.",
+    "keywords": ["https", "ssh", "difference", "connection type", "secure", "token", "clone options"],
+    "content": "When cloning a repository or connecting your local machine to GitHub, you will be given two primary URL options: **HTTPS** and **SSH**. Here is the breakdown:\n\n**HTTPS (Hypertext Transfer Protocol Secure):**\n- **Best for:** Beginners and simple standard setups.\n- **How it works:** It requires you to authenticate using a Personal Access Token (PAT) instead of your account password whenever you push code from the terminal, or relies on your machine's credential manager.\n- **URL Example:** `https://github.com/user/repo.git`\n\n**SSH (Secure Shell):**\n- **Best for:** Advanced users who push/pull constantly and handle security rigorously.\n- **How it works:** It requires you to locally generate cryptographic \"SSH keys\" and paste your public key to your GitHub account settings. Once configured, you never have to type a token or password to push code again. It's highly trusted and secure.\n- **URL Example:** `git@github.com:user/repo.git`\n\n*Recommendation:* Start with HTTPS and GitHub Desktop to make things easy. Move to SSH later when you are comfortable with terminal commands."
   },
   {
     "id": "old_q1",
     "feature": "Create a repository",
-    "description": "How to create a repository on the Web or GitHub Desktop.",
-    "keywords": ["create", "repository", "new repo", "start project", "init"],
-    "content": "**Web:**\n1. Log in to GitHub\n2. Click \"+\" → New repository\n3. Enter repository name\n4. Choose Public or Private\n5. Click Create repository\n\n**Desktop:**\n1. Open GitHub Desktop\n2. Click File → New Repository\n3. Enter name and local path\n4. Click Create Repository\n5. Click Publish repository"
+    "description": "The complete guide to creating a brand new GitHub project.",
+    "keywords": ["create", "repository", "new repo", "start project", "init", "make project"],
+    "content": "A repository (or \"repo\") is a folder that tracks all the files and history for a specific project. You can create a repo via the web interface or Desktop.\n\n**Via GitHub Web Interface:**\n1. Log in to your GitHub account on your browser.\n2. In the top-right corner next to your profile picture, click the **+** (plus) icon and select **New repository**.\n3. Type a descriptive, unique name for your project under **Repository name** (e.g., `my-portfolio-site`).\n4. (Optional) Add a brief description of what the project is about.\n5. Select the visibility:\n   - **Public:** Anyone on the internet can see your code.\n   - **Private:** You choose who can see and commit to your code.\n6. Check the box **Add a README file**. (Highly recommended so people know what your project is).\n7. Click the green **Create repository** button.\n\n**Via GitHub Desktop:**\n1. Open the app and click **File → New Repository...** (or press Ctrl+N).\n2. Name your repository and choose where to save the folder on your local computer.\n3. Make sure \"Initialize this repository with a README\" is checked.\n4. Click **Create Repository**.\n5. Important: To put it online, click **Publish repository** at the top."
   },
   {
     "id": "old_q2",
     "feature": "Clone a repository",
-    "description": "How to clone a repository on the Terminal or GitHub Desktop.",
-    "keywords": ["clone", "download", "copy repo", "get code", "git clone"],
-    "content": "**Terminal (Command Line):**\n1. Open repository on GitHub\n2. Click Code\n3. Copy HTTPS or SSH URL\n4. Run:\n```bash\ngit clone <repo-url>\n```\n\n**Desktop:**\n1. Open GitHub Desktop\n2. Click File → Clone Repository\n3. Select repo or paste URL\n4. Choose location\n5. Click Clone"
+    "description": "How to download a fully connected, complete copy of an online repository to your local computer.",
+    "keywords": ["clone", "download", "copy repo", "get code", "git clone", "pull repo"],
+    "content": "Cloning gives you a fully functional local copy of a repo, linked directly to the main GitHub server so you can push and pull updates easily.\n\n**Via Terminal (Command Line):**\n1. Find the repository on GitHub.\n2. Click the green **<> Code** button.\n3. Copy the URL provided under the HTTPS tab.\n4. Open your computer's terminal and navigate to where you want the folder using the `cd` command (e.g., `cd Documents`).\n5. Run the clone command:\n```bash\ngit clone https://github.com/username/repository-name.git\n```\n6. The folder is now on your machine. Type `cd repository-name` to enter it.\n\n**Via GitHub Desktop:**\n1. Go to the project page on GitHub.\n2. Click the green **<> Code** button.\n3. Select **Open with GitHub Desktop**.\n4. In the app that opens, confirm the local folder path where you want the code stored.\n5. Click **Clone**.\n\n*Note:* You cannot clone an empty repository. Make sure there is at least one file (like a README) in it first."
   },
   {
     "id": "q8",
     "feature": "How do I upload files?",
-    "description": "Adding files to your repository on Web or Desktop.",
-    "keywords": ["upload files", "add files", "save files", "put files"],
-    "content": "**Web:**\n1. Click Add file → Upload files\n2. Drag and drop files\n3. Commit changes\n\n**Desktop:**\n1. Copy files into repository folder\n2. Open GitHub Desktop\n3. Commit changes\n4. Push"
+    "description": "Different ways to add files to your repository on Web or Desktop.",
+    "keywords": ["upload files", "add files", "save files", "put files", "insert code"],
+    "content": "Uploading files is the primary way you add your project's code, images, and documents into a repository.\n\n**Via Web Browser (Fast for single files):**\n1. Navigate to the main page of your repository on GitHub.\n2. Near the top, click the **Add file** button, then select **Upload files**.\n3. Drag and drop your files/folders into the gray box, or click the link to open your computer's file browser.\n4. Scroll to the bottom to the \"Commit changes\" box. Add a short message explaining what you uploaded (e.g., \"Add initial website images\").\n5. Click the green **Commit changes** button.\n\n**Via GitHub Desktop (Best for bulk updates):**\n1. Open your computer's File Explorer (Windows) or Finder (Mac).\n2. Navigate to the local folder where your repository is cloned.\n3. Simply move, copy, or save any files directly into this folder.\n4. Open GitHub Desktop. You will see all your newly added files marked with a green `+` on the left.\n5. Write a summary at the bottom left (e.g., \"Added CSS and JS files\").\n6. Click **Commit to main**.\n7. Finally, click **Push origin** at the top to send the files online."
   },
   {
     "id": "q9",
     "feature": "How do I download a repository as ZIP?",
-    "description": "Downloading the raw master codes as a zip file.",
-    "keywords": ["download zip", "download repo", "get files", "zip file"],
-    "content": "1. Open repository\n2. Click Code\n3. Click Download ZIP"
+    "description": "Downloading the raw code as a zip file without using Git tools.",
+    "keywords": ["download zip", "download repo", "get files", "zip file", "manual download"],
+    "content": "If you just want a snapshot copy of the code and you don't care about versions, branching, or pushing updates back to GitHub, downloading as a ZIP is the easiest approach.\n\n**Steps:**\n1. Open the main page of the repository you want to download on GitHub in your browser.\n2. Click the green **<> Code** button located right above the list of files.\n3. At the bottom of the dropdown menu, click **Download ZIP**.\n4. The files will be saved directly to your computer's Downloads folder as a compressed `.zip` archive.\n5. Extract the ZIP folder using your operating system's default extraction tool (right-click -> Extract All).\n\n*Caveat:* Downloaded ZIPs are completely disconnected from Git. If the author updates the repository later, your ZIP will not update; you must manually download the new ZIP again."
   },
   {
     "id": "q10",
     "feature": "How do I change repository visibility (public/private)?",
-    "description": "Switching your repository from public to private or vice versa.",
-    "keywords": ["change visibility", "make private", "make public", "hide repo", "settings"],
-    "content": "1. Go to Settings\n2. Scroll to visibility section\n3. Select Public or Private\n4. Save changes"
+    "description": "Switching your repository from public to private or vice versa to control who can see your code.",
+    "keywords": ["change visibility", "make private", "make public", "hide repo", "settings", "access control"],
+    "content": "You can change a repository's visibility status at any time if you have admin rights.\n\n**Steps:**\n1. Navigate to the main page of your repository on GitHub.\n2. Click on the **⚙️ Settings** tab (usually the last option in the top navigation bar of the repo).\n3. Scroll all the way down to the bottom of the page to the **Danger Zone** section.\n4. Look for the \"Change repository visibility\" option and click the **Change visibility** button.\n5. Select either \"Change to Public\" or \"Change to Private\".\n6. A warning dialog will pop up. Carefully read the implications (e.g., making it private might remove existing forks).\n7. You will be required to type the repository's full name to confirm this major action.\n8. Click the confirmation button to finalize the visibility update."
   },
   {
     "id": "q11",
     "feature": "How do I rename a repository?",
-    "description": "Changing the name of a GitHub repository.",
-    "keywords": ["rename repo", "change name", "edit name"],
-    "content": "1. Go to Settings\n2. Edit repository name\n3. Click Save"
+    "description": "Changing the name of a GitHub repository without breaking existing workflows.",
+    "keywords": ["rename repo", "change name", "edit name", "update title"],
+    "content": "Renaming a repository is safe to do. GitHub will automatically redirect traffic from your old URL to the new one.\n\n**Steps:**\n1. Go to the main page of the repository.\n2. Click the **⚙️ Settings** tab.\n3. Right at the top, under the **General** section, you will see the **Repository name** field.\n4. Delete the current name and type in the new desired name. GitHub will check in real-time if the new name is available.\n5. Click the **Rename** button underneath the text field.\n\n*Important Post-Rename Action:*\nIf you have the repository cloned on your local computer, you'll need to update the remote URL to match the new name, otherwise future pushes might run into warnings. Open your terminal in the repo folder and run:\n```bash\ngit remote set-url origin https://github.com/username/NEW-REPO-NAME.git\n```"
   },
   {
     "id": "q12",
     "feature": "How do I initialize a repository with a README?",
-    "description": "Starting a new repository with a README checklist.",
-    "keywords": ["add readme", "initialize with readme", "starting files"],
-    "content": "1. Create a repository\n2. Check Add a README file\n3. Click Create repository"
+    "description": "Starting a new repository with default instructional files to prevent \"Empty Repo\" issues.",
+    "keywords": ["add readme", "initialize with readme", "starting files", "first file", "setup repo"],
+    "content": "A README is a markdown file (`README.md`) that serves as the instruction manual or front page for your project. GitHub highly encourages all repositories to have one.\n\n**During Creation:**\n1. When clicking \"New repository\", look for the section titled \"Initialize this repository with:\".\n2. Simply tick the box that says **Add a README file**.\n3. Click \"Create repository\". The repo is immediately initialized and ready to be cloned.\n\n**Adding to an Existing Empty Repo:**\nIf you created a repo without checking that box, you'll see a page full of terminal instructions. To bypass that:\n1. Scroll down the empty repo page to the text that says: \"…or create a new file on the command line\".\n2. Click the small link that says **creating a new file**.\n3. Name the file exactly `README.md`.\n4. Type a `# ` followed by your project name in the text editor. (This makes a large heading).\n5. Click **Commit differences** at the top right."
   },
   {
     "id": "old_q3",
     "feature": "Commit changes",
-    "description": "How to commit and push changes on the Terminal or GitHub Desktop.",
-    "keywords": ["commit", "save changes", "git add", "git commit", "push"],
-    "content": "**Terminal (Command Line):**\n```bash\ngit status                 # Check what files you have modified\ngit add .                  # Stage all your modified files\ngit commit -m \"message\"    # Save your changes locally with a note\ngit push                   # Upload your saved changes to GitHub\n```\n\n**Desktop:**\n1. Open GitHub Desktop\n2. Select repository\n3. Add commit message\n4. Click Commit to main\n5. Click Push origin"
+    "description": "How to package and save your files locally using a descriptive message.",
+    "keywords": ["commit", "save changes", "git add", "git commit", "push", "save work"],
+    "content": "Committing is the core function of Git. It takes a permanent snapshot of your project exactly as it looks right now.\n\n**Via Terminal (Command Line):**\nWhen you modify code, follow this 3-step save process:\n```bash\n# 1. Check what files you have modified (they will show up in red)\ngit status                 \n\n# 2. Stage all your modified files (moves them from red to green)\ngit add .                  \n\n# 3. Save your changes locally with a descriptive message\ngit commit -m \"Fixed the login bug and updated button colors\"\n```\n*Note: Your changes are now saved permanently on your computer, but NOT on GitHub yet. You must `push` them to put them online.*\n\n**Via GitHub Desktop:**\n1. Open the GitHub Desktop app.\n2. modified files will appear automatically on the left sidebar list.\n3. At the bottom left, write a clear, short title snippet (e.g., \"Add contact form\"). You can also add more details in the Description box.\n4. Click the blue **Commit to main** button.\n5. Click **Push origin** to upload your save."
   },
   {
     "id": "q14",
     "feature": "What is a commit?",
-    "description": "Definition of a commit.",
-    "keywords": ["meaning commit", "what is commit", "define commit"],
-    "content": "A commit is a saved snapshot of your project changes."
+    "description": "Definition and detailed explanation of what a Git commit actually is.",
+    "keywords": ["meaning commit", "what is commit", "define commit", "commit explanation"],
+    "content": "A **commit** in Git acts as a save point or snapshot of all your project's files at a specific moment in time.\n\nThink of it like saving a document in Microsoft Word or taking a photograph. However, unlike a simple control-S \"save\", every single commit receives a unique, unchangeable ID (known as a SHA hash, like `a1b2c3d...`). This means that you don't just overwrite files; your project builds a historical timeline of saves.\n\nBecause of this, you can always confidently go back in time to inspect or restore your code exactly as it was during commit #1, commit #5, or commit #100. Every commit is also strictly required to have a descriptive message attached to it, explaining exactly *why* the code was changed."
   },
   {
     "id": "old_q6",
     "feature": "Push changes",
-    "description": "How to push changes to the remote repository on the Terminal or GitHub Desktop.",
-    "keywords": ["push", "upload changes", "git push"],
-    "content": "**Terminal (Command Line):**\n```bash\n# If you just created the branch locally, you MUST set the upstream tracking:\ngit push -u origin branch-name\n\n# Or, if the branch already exists online:\ngit push origin branch-name\n```\n\n**Desktop:**\n* Click Push origin (or Publish branch)"
+    "description": "How to upload and synchronize your local commits to the remote GitHub server.",
+    "keywords": ["push", "upload changes", "git push", "send to server"],
+    "content": "Pushing is how you send your locally saved commits up to the internet so that the rest of the world (or your teammates) can see them.\n\n**Via Terminal (Command Line):**\nOpen your terminal in the repository folder and run:\n```bash\n# Standard push for an existing branch tracking online:\ngit push origin branch-name\n\n# Or, if you just created a NEW local branch that GitHub doesn't know about yet, you MUST link it using -u (upstream):\ngit push -u origin branch-name\n```\n*(If prompted, enter your GitHub username and Personal Access Token or rely on your credential helper).*\n\n**Via GitHub Desktop:**\n1. After you press Commit, look to the top right of the application.\n2. Click the button that says **Push origin** (or **Publish branch** if it's the first time you are pushing a new branch).\n3. You'll see an uploading progress bar. Once finished, your code is live on GitHub."
   },
   {
     "id": "old_q7",
     "feature": "Pull changes",
-    "description": "How to fetch and pull updates from the remote repository on the Terminal or GitHub Desktop.",
-    "keywords": ["pull", "fetch", "get updates", "git pull", "sync"],
-    "content": "**Terminal (Command Line):**\n```bash\ngit pull origin main       # Fetch and merge updates from the remote\n```\n\n**Desktop:**\n1. Click Fetch origin\n2. Click Pull origin"
+    "description": "How to fetch and merge updates from the remote GitHub server down into your local code.",
+    "keywords": ["pull", "fetch", "get updates", "git pull", "sync", "download latest"],
+    "content": "If someone else modifies the code online, or if you make changes directly through the GitHub web interface, your computer's local files will be out of date. You must \"pull\" to get those fresh updates.\n\n**Via Terminal (Command Line):**\nBefore you start working for the day, make it a habit to open your terminal and run:\n```bash\n# This fetches remote changes and safely merges them into your current local branch\ngit pull origin main\n```\n*(Replace `main` with whatever branch you are actively working on).*\n\n**Via GitHub Desktop:**\n1. Open the Desktop app and select your repository.\n2. Look at the top center button that says **Fetch origin**. Click it.\n3. Fetching privately checks if there are new changes online. If there are, the button will dramatically change to say **Pull origin** with a downward arrow indicating how many commits you are missing.\n4. Click **Pull origin** to safely download and merge those files into your computer."
   },
   {
     "id": "q17",
     "feature": "What is the difference between commit and push?",
-    "description": "Understanding local saves vs remote uploads.",
+    "description": "Understanding the separation between local offline saves vs remote online uploads.",
     "keywords": ["difference commit push", "commit vs push", "local vs remote"],
-    "content": "**Commit** – saves changes locally on your personal computer.\n**Push** – uploads the saved changes to your public/private GitHub cloud footprint."
+    "content": "This is the most common confusion point for beginners. Git separates the act of saving from the act of uploading.\n\n- **Committing (`git commit`) is strictly local.** It takes a snapshot and saves the changes onto your *personal computer's hard drive*. You can commit 50 times while completely disconnected from the internet. Nobody else in the world can see these changes yet.\n- **Pushing (`git push`) is strictly remote.** It acts as the sync button. It takes all those local commits you made and firmly uploads them to the GitHub cloud server. Now your teammates can see them, and your work is safely backed up on the internet.\n\n*Summary:* You commit as often as possible to save your progress incrementally, and you push at the end of a session to share that progress."
   },
   {
     "id": "q18",
     "feature": "How do I undo the last commit?",
-    "description": "Removing the previous commit via soft reset.",
-    "keywords": ["undo commit", "revert commit", "delete commit", "git reset soft"],
-    "content": "```bash\ngit reset --soft HEAD~1\n```"
+    "description": "Safely removing the previous commit from your history via soft reset without losing code.",
+    "keywords": ["undo commit", "revert commit", "delete commit", "git reset soft", "cancel last save"],
+    "content": "If you accidentally committed the wrong files, or your commit message had a typo, you can easily \"uncommit\" it without losing any of your hard work.\n\nOpen your terminal and run:\n```bash\ngit reset --soft HEAD~1\n```\n\n**Why this works:**\n- `HEAD~1` tells Git to go backward by exactly `1` commit.\n- `--soft` is extremely important! It tells Git to delete the historical record, but **keep all your actual code changes intact** exactly as they are in your files, placing them back in the staging area (green in `git status`).\n\nNow you can easily fix your files, re-add them, and make a brand new commit!"
   },
   {
     "id": "q19",
     "feature": "How do I view changes before committing?",
-    "description": "Inspecting current uncommitted files and diffs.",
+    "description": "Inspecting current uncommitted files and exact line-by-line diffs safely.",
     "keywords": ["view changes", "see status", "git diff", "git status", "check modifications"],
-    "content": "```bash\ngit status\ngit diff\n```"
+    "content": "Before typing your commit command, it is a professional best practice to double-check accurately what you are about to save.\n\n**Use these two terminal commands:**\n\n1. General Overview:\n```bash\ngit status\n```\nThis tells you roughly *which* files have been modified, deleted, or freshly added.\n\n2. Detailed Line-by-Line Changes:\n```bash\ngit diff\n```\nThis outputs every single newly added line in green (prefixed with `+`) and every removed/edited line in red (prefixed with `-`). It guarantees you catch accidentally deleted code, unwanted typos, or debugging statements before committing.\n\n*(Press the spacebar to scroll down through the diff output, and press the `q` key on your keyboard to quit the diff tool and return to the normal terminal).* "
   },
   {
     "id": "q20",
     "feature": "What is the staging area?",
-    "description": "Definition of Git's staging layer.",
-    "keywords": ["staging area", "what is staging", "stage files"],
-    "content": "The staging area is where you prepare files before committing them."
+    "description": "Definition of Git's middle layer between your messy work files and your clean commits.",
+    "keywords": ["staging area", "what is staging", "stage files", "index"],
+    "content": "Git has a unique 3-layer architecture: \n1. **Your Working Directory** (Your messy, current files)\n2. **The Staging Area** (The waiting room)\n3. **The Repository** (The permanent saved history)\n\nThe **Staging Area** is a preliminary holding zone where you prepare files before permanently committing them. \n\n**Why does it exist?** \nImagine you edited 10 different files to fix three separate, completely unrelated bugs. Committing all 10 files in one massive chunk is a bad practice. The staging area allows you to selectively \"stage\" (`git add`) just the 3 files related to Bug A, commit them, then stage the 4 files for Bug B, commit them, etc.\n\nWhen you use `git add .`, you are telling Git: *\"Take everything in my Working Directory and shove it into the Staging Area, getting it ready for the next commit snapshot.\"*"
   },
   {
     "id": "old_q4",
     "feature": "Create a branch",
-    "description": "How to create a new branch on the Web or GitHub Desktop.",
-    "keywords": ["branch", "create branch", "new branch", "checkout -b"],
-    "content": "**Web:**\n1. Open repository\n2. Click branch dropdown\n3. Type branch name\n4. Click Create branch\n\n**Desktop:**\n1. Open GitHub Desktop\n2. Click Current Branch\n3. Click New Branch\n4. Enter branch name\n5. Click Create Branch"
+    "description": "How to cleanly separate your new feature work from the main stable codebase.",
+    "keywords": ["branch", "create branch", "new branch", "checkout -b", "git branch"],
+    "content": "Branches allow you to take a copy of the main code, test out risky new ideas, build features, or fix bugs in complete isolation. If you mess up your branch, the `main` code remains perfectly safe.\n\n**Via Web Browser:**\n1. Open your repository on GitHub.\n2. In the top-left, click the dropdown button that says **main** (or master).\n3. Type your new desired branch name in the search box (e.g., `feature-login-page`).\n4. Click the text that says **Create branch: feature-login-page from 'main'**.\n\n**Via GitHub Desktop:**\n1. Open the exact repository in the Desktop application.\n2. Click the **Current Branch** tab at the top.\n3. Click the **New Branch** button.\n4. Type in your short, descriptive branch name (no spaces allowed).\n5. Click **Create Branch**, and finally click **Publish Branch** to put it online.\n\n**Via Terminal:**\n```bash\n# Creates the branch AND immediately switches you to it:\ngit checkout -b new-branch-name\n```"
   },
   {
     "id": "old_q5",
     "feature": "Switch branches",
-    "description": "How to switch to a different branch on the Terminal or GitHub Desktop.",
-    "keywords": ["switch branch", "checkout", "change branch"],
-    "content": "**Terminal (Command Line):**\n```bash\ngit checkout branch-name   # Switches your local code to the branch\n# Or, using the newer command:\n# git switch branch-name\n```\n\n**Desktop:**\n1. Click Current Branch\n2. Select branch"
+    "description": "How to move your computer's local files back and forth between different branches.",
+    "keywords": ["switch branch", "checkout", "change branch", "git switch"],
+    "content": "Switching branches literally changes the physical files on your hard drive to match the state of the branch you selected. (Warning: Make sure you commit any un-saved work before switching!)\n\n**Via Terminal (Command Line):**\n```bash\n# Standard legacy command:\ngit checkout branch-name\n\n# Or, use the modern explicit command:\ngit switch branch-name\n```\nTo see a list of all your available local branches, run: `git branch`\n\n**Via GitHub Desktop:**\n1. Open the application.\n2. Look at the top bar and click the bold text that says **Current Branch**.\n3. A list drops down showing all branches. Simply click the one you want to jump to."
   },
   {
     "id": "q23",
     "feature": "How do I delete a branch?",
-    "description": "Removing a branch locally.",
+    "description": "Removing a completed or abandoned branch to keep your repository clean.",
     "keywords": ["delete branch", "remove branch", "git branch -d", "trash branch"],
-    "content": "```bash\ngit branch -d branch-name\n```"
+    "content": "Once a branch has been fully merged into `main`, or if the experiment failed, it's best practice to delete the branch to keep your workspace uncluttered.\n\n**Ensure you switch out of the branch first!** You cannot delete the branch you are actively sitting on. Switch to `main` first: `git switch main`.\n\n**Via Terminal:**\n```bash\n# Safe delete (Git will prevent deletion if there is unmerged code)\ngit branch -d branch-name\n\n# Force delete (Use with CAUTION, deletes even if code is unmerged/lost)\ngit branch -D branch-name\n```\n\n*Note:* This only deletes the branch locally. To delete it off the GitHub cloud via terminal, use: `git push origin --delete branch-name`."
   },
   {
     "id": "q24",
     "feature": "Why use branches?",
-    "description": "The logic behind building features on branches.",
-    "keywords": ["why branch", "purpose of branch", "use cases branch"],
-    "content": "Branches allow you to work on features or test bugs without affecting the stable `main` code."
+    "description": "The logic, safety, and core philosophy behind building via branches.",
+    "keywords": ["why branch", "purpose of branch", "use cases branch", "branching strategy"],
+    "content": "Branching is considered the primary superpower of Git compared to legacy save systems.\n\n1. **Total Isolation (Safety First):** By creating a branch, you get a pure sandbox copy of the project. If you write terrible code, permanently break the application, or just want to start over, you can delete the branch. The `main` branch remains 100% stable, untouched, and fully deployable for users at all times.\n2. **Parallel Teamwork:** Branches prevent teammates from overwriting each other's work. Developer A can work on a branch called `fix-database`, while Developer B works on `add-animations`. They work simultaneously and merge back into `main` separately when finished.\n3. **Easy Code Review:** Branches allow changes to be grouped together and formally submitted as a \"Pull Request\" for a supervisor to systematically review, comment on, and approve before it joins the main codebase."
   },
   {
     "id": "q25",
     "feature": "What is main vs dev branch?",
-    "description": "Differences between common default branch naming.",
-    "keywords": ["main vs dev", "master vs dev", "branch names"],
-    "content": "**main** – stable production code ready for deployment\n**dev** – development work where active tests take place"
+    "description": "Differences between common industry default branch naming structures.",
+    "keywords": ["main vs dev", "master vs dev", "branch names", "git flow", "standard branches"],
+    "content": "In professional software development environments, repositories utilize specific branch \"strategies\". Two of the most common standard branches are:\n\n**`main` (formerly `master`):**\n- This is the absolute source of truth for the repository.\n- The code inside `main` should always be fully tested, completely perfect, and highly stable.\n- In many companies, pushing to `main` automatically triggers a script that securely deploys the code live to thousands of real users on the internet.\n\n**`dev` (or `develop`):**\n- A specialized branch acting as the primary integration layer.\n- Developers merge their individual features into `dev` rather than `main`. It contains the bleeding-edge latest updates for the application.\n- It's functional, but might lack finishing polish or possess minor bugs. Over time, when `dev` hits a stable milestone point, the whole branch is merged into `main` for an official software release."
   },
   {
     "id": "q26",
     "feature": "How do I sync a branch?",
-    "description": "Pulling the latest to a local branch.",
-    "keywords": ["sync branch", "update branch", "pull main"],
-    "content": "```bash\ngit pull origin main\n```"
+    "description": "Pulling the latest updates from the main codebase into your isolated branch.",
+    "keywords": ["sync branch", "update branch", "pull main", "merge latest"],
+    "content": "If you are working on a feature branch for two weeks, your branch will become severely outdated compared to what the rest of the team pushed to `main` during that time. You must sync it constantly.\n\n**Steps in Terminal:**\nEnsure you are currently on your feature branch (run `git status` to check).\n```bash\n# Automatically pull down 'main' from the server and merge it heavily into your current branch\ngit pull origin main\n```\n\nIf Git detects changes made to exactly the same lines of code, the process will pause and throw a **Merge Conflict**, which you will have to manually solve in your code editor before continuing."
   },
   {
     "id": "old_q8",
     "feature": "Create a pull request",
-    "description": "How to create a pull request (PR) on the Web or GitHub Desktop.",
+    "description": "How to formally propose your isolated branch changes to be permanently merged.",
     "keywords": ["pull request", "pr", "merge code", "propose changes", "create pr"],
-    "content": "**Web:**\n1. Push branch\n2. Click Compare & pull request\n3. Add title & description\n4. Click Create pull request\n*(Note: If you don't own the repository but want to contribute, you must click \"Fork\" in the top right corner before doing these steps!)*\n\n**Desktop:**\n1. Push branch\n2. Click Create Pull Request\n3. Complete the request in your browser"
+    "content": "A Pull Request (PR) is the formal mechanism for asking repository admins to accept your finalized code into the real `main` branch.\n\n**Via Web Interface (The best route):**\n1. First, make sure you have fully committed and `push`ed your branch to GitHub.\n2. Go to the repository's main page on GitHub.\n3. GitHub detects recent pushes and provides a highly-visible yellow/green banner that says *\"branch-name had recent pushes\"*. Click the green **Compare & pull request** button next to it.\n    - *(If the banner missing, go to the 'Pull requests' tab and manually click 'New pull request'. Set 'base' as `main` and 'compare' as your branch.)*\n4. Give the PR a highly descriptive Title.\n5. Fill out the description box. State exactly what you added, what bugs you fixed, and provide visual screenshots if applicable.\n6. Click the green **Create pull request** button at the lower right.\n\n*Note: If contributing to a public open-source project you DO NOT own, you must first \"Fork\" their repository, push your branch to your own fork, and then open a pull request across forks.*"
   },
   {
     "id": "q28",
     "feature": "What is a pull request?",
-    "description": "The definition of PRs.",
-    "keywords": ["what is pr", "what is pull request", "pull request meaning"],
-    "content": "A pull request is a formal request to merge your changes into another branch (usually main)."
+    "description": "A comprehensive definition of PRs and their purpose in Git environments.",
+    "keywords": ["what is pr", "what is pull request", "pull request meaning", "pr definition"],
+    "content": "A **Pull Request (PR)** is a dedicated thread created on an online Git platform (like GitHub or GitLab) where a developer formally requests that a specific branch of code they wrote be merged (\"pulled\") into the primary repository by an admin.\n\nIt acts as a critical gateway checkpoint. Instead of allowing anyone to blindly shove risky code into the main server, a PR provides a space where:\n- The code changes can be visualized line-by-line.\n- Automated CI/CD bots can run security scans and unit tests against the new code.\n- Senior team members can do formal **Code Reviews**—leaving detailed comments, catching obvious bugs, requesting design changes, and finally enforcing quality control before clicking approve."
   },
   {
     "id": "old_q9",
     "feature": "Merge changes",
-    "description": "How to merge a pull request on the Web.",
+    "description": "How to securely complete the final step of bringing approved code into the codebase.",
     "keywords": ["merge", "pull request", "combine changes", "merge pr"],
-    "content": "**Web:**\n1. Open pull request\n2. Click Merge\n3. Confirm"
+    "content": "Merging finalizes the Pull Request process, taking the distinct commits belonging to a temporary feature branch and permanently integrating them together with the target base branch (usually `main`).\n\n**Via Web Interface:**\n1. Navigate to the specific Pull Request inside the \"Pull requests\" tab of the repository.\n2. Scroll past the comments and automated checks down to the bottom of the page.\n3. You will see a large, green **Merge pull request** button. Click it.\n4. GitHub asks for one massive final confirmation. Click **Confirm merge**.\n5. A purple badge will appear declaring the PR successfully `Merged`.\n6. Best Practice: Immediately click the new button that appears suggesting to **Delete branch**. The feature is done, so its branch is now redundant trash."
   },
   {
     "id": "old_q10",
     "feature": "Resolve merge conflicts",
-    "description": "How to fix merge conflicts on the Terminal or GitHub Desktop.",
-    "keywords": ["merge conflict", "resolve conflicts", "fix conflicts", "git conflict"],
-    "content": "**Terminal (Command Line):**\n1. Open conflicted files in your editor (like VS Code).\n2. Fix conflicts (Keep Current, Accept Incoming, or manually remove `<<<<<<<`, `=======`, `>>>>>>>` markers).\n3. Once resolved, run in your terminal:\n```bash\ngit status                 # Verify you have fixed the conflicts\ngit add .                  # Stage the resolved files\ngit commit                 # Complete the merge process\ngit push                   # Upload to GitHub\n```\n\n**Desktop:**\n1. Open repository\n2. Review conflicted files with warning signs\n3. Click Open in editor and fix the conflicts\n4. Click Mark resolved inside GitHub Desktop\n5. Finally, Commit and push"
+    "description": "How to fix the dreaded Git merge conflict when two developers modify the exact same lines.",
+    "keywords": ["merge conflict", "resolve conflicts", "fix conflicts", "git conflict", "error"],
+    "content": "A **Merge Conflict** happens when Git tries to merge code but gets confused because two different branches updated the exact same line of code in different ways. Git cannot guess which version is right, so it halts the merge and forces you to pick.\n\n**Steps to manually resolve:**\n1. When the terminal screams `Merge conflict in file.txt`, open that exact file in your IDE or text editor.\n2. Inside the file, Git has injected gross-looking warning markers framing the conflicting section:\n   ```text\n   <<<<<<< HEAD (Current branch code)\n   <button color=\"red\">Submit</button>\n   =======\n   <button color=\"blue\">Submit</button>\n   >>>>>>> feature-branch (Incoming branch code)\n   ```\n3. You are acting as the judge. Your job is to delete the `<<<<<<<`, `=======`, and `>>>>>>>` markers completely. Then manually edit the remaining code to look exactly how the final perfect version should appear (e.g., delete the red button, keep the blue).\n4. Save the file.\n5. Return to the terminal and run:\n   ```bash\n   git add .\n   git commit -m \"Resolved merge conflicts\"\n   ```\nThe conflict is defeated and the merge successfully completes!"
   },
   {
     "id": "q31",
     "feature": "How do I review changes?",
-    "description": "Checking PR file diffs before approval.",
-    "keywords": ["review changes", "check code", "code review", "approve changes"],
-    "content": "1. Open pull request\n2. Click Files changed\n3. Add comments or approve"
+    "description": "Checking PR file diffs and conducting a formal peer review before granting code approval.",
+    "keywords": ["review changes", "check code", "code review", "approve changes", "review pr"],
+    "content": "Before approving a teammate's pull request, you are expected to rigorously audit what code they are trying to push logic and styling wise.\n\n**Steps for Code Review:**\n1. Navigate to your teammate's pull request page.\n2. Near the top of the PR title panel, click the tab labeled **Files changed**.\n3. This loads a high-level view highlighting additions (green) and deletions (red). Scroll through and meticulously read their code lines.\n4. If you see a bug or a messy formatting issue, hover your mouse slightly to the left of that specific code line and click the **`+` icon** that appears. Write a specific localized comment detailing exactly how they need to fix it.\n5. Once you are finished checking every file, click the big green **Review changes** button at the absolute top right.\n6. Select an option: \n   - **Comment** (casual notes)\n   - **Approve** (perfect, ready to merge!)\n   - **Request changes** (blocks merging until the author fixes the specific errors you pointed out)"
   },
   {
     "id": "q32",
     "feature": "What is a draft pull request?",
-    "description": "PR definition of 'DRAFT'.",
-    "keywords": ["draft pr", "wip pr", "work in progress"],
-    "content": "A draft pull request is a PR that is NOT ready to be merged yet, mainly used for requesting early feedback."
+    "description": "The exact definition and strategic use-case for opening a PR as a 'DRAFT'.",
+    "keywords": ["draft pr", "wip pr", "work in progress", "draft"],
+    "content": "A **Draft Pull Request** is a Pull Request that explicitly signals: *\"Hey, I am not completely done with this code, do not try to merge this yet, but I want you guys to look at it.\"*\n\nDraft PRs are typically styled in grey on the GitHub interface instead of green/purple.\n\n**Use cases:**\n- You are building a massive feature over two weeks and want early architectural feedback from Senior devs on days 3 and 4, without them thinking the feature is finished.\n- Running automated cloud tests early without risking merge-permissions.\n\nTo make one, instead of clicking the standard green \"Create pull request\", click the small dropdown arrow attached next to it and select **Create draft pull request**. When you finally finish coding weeks later, there is a prominent button to convert from Draft to a normal PR."
   },
   {
     "id": "q33",
     "feature": "How do I create an issue?",
-    "description": "Logging a task or bug ticket.",
+    "description": "Logging a task, tracker, or official bug ticket within the repository.",
     "keywords": ["create issue", "new issue", "report bug", "open ticket"],
-    "content": "1. Go to Issues panel\n2. Click New Issue\n3. Submit details"
+    "content": "Issues act as the official \"To-Do\" list and bug tracker for a repository. Instead of messaging developers privately about problems, they should be logged formally.\n\n**Steps:**\n1. At the top of the repository interface, click the **Issues** tab (located right next to 'Code').\n2. Click the green **New issue** button located at the upper right side.\n3. Some large repositories redirect you to select a specific issue type template (e.g., Bug report vs Feature request). If so, click 'Get started' on the appropriate one.\n4. Write a clear, action-oriented **Title** (e.g., *\"Login button crash on Safari mobile browsers\"*).\n5. Fill out the large text description. Best practice dictates you supply exact instructions on how to replicate the bug, server environment details, and screenshots if applicable.\n6. Click **Submit new issue**."
   },
   {
     "id": "q34",
     "feature": "How do I assign an issue?",
-    "description": "Selecting an assignee for issues.",
-    "keywords": ["assign issue", "delegate issue", "choose person"],
-    "content": "1. Open issue\n2. Click Assignees\n3. Select user"
+    "description": "Selecting an official assignee point-person to tackle an open code task.",
+    "keywords": ["assign issue", "delegate issue", "choose person", "assignee"],
+    "content": "Assigning issues prevents redundancy by clearly dedicating a single specific developer to be responsible for completing a task.\n\n**Steps:**\n1. Open your specific Issue in the repository.\n2. Look at the right-side configuration panel.\n3. Under the **Assignees** section, click the small gear/cogwheel icon.\n4. A dropdown menu appears showing a list of all current repository collaborators.\n5. Check the box next to your name (if claiming the task for yourself), or pick a teammate's name.\n6. The page will auto-save, and the assignee's profile picture will appear docked to the issue ticket. They will receive an email notification indicating they've been put in charge."
   },
   {
     "id": "q35",
     "feature": "How do I close an issue?",
-    "description": "Marking an issue ticket as successfully fixed/closed.",
+    "description": "Marking an issue ticket as successfully fixed/closed when the job is done.",
     "keywords": ["close issue", "finish issue", "resolve issue"],
-    "content": "Click the `Close issue` button at the bottom of the issue thread."
+    "content": "Once the required code has been merged and the bug is eradicated, the ticket needs to reflect completion.\n\n**Manual method:**\nNavigate to the bottom of the Issue's long discussion thread. You'll see two buttons. Simply click the **Close issue** button located right next to \"Comment\". The ticket icon will turn purple and lock itself from active to-do lists.\n\n**Automatic Workflow Method (Highly Preferred):**\nYou should let GitHub handle it automatically. When you create a Pull Request to fix the bug, just type the magic phrase \"Closes #XX\" (where XX is the issue number) into your PR description. When the PR gets successfully merged, GitHub automatically crawls over and flawlessly closes the attached issue simultaneously."
   },
   {
     "id": "q36",
     "feature": "What are labels?",
-    "description": "Tags on GitHub.",
-    "keywords": ["what are labels", "tags", "categories", "color markers"],
-    "content": "Labels are tags used to organize issues visually (e.g., bug, enhancement, feature)."
+    "description": "Understanding tags on GitHub and how they manage priority organization.",
+    "keywords": ["what are labels", "tags", "categories", "color markers", "labels"],
+    "content": "Labels are colored metadata tags attached externally to Issues and Pull Requests to act as quick visual categorization flags.\n\nCommonly used default baseline labels include:\n- **🔴 bug:** Something crucial is currently broken and needs urgent fixing.\n- **✨ enhancement:** Represents an idea for a cool new feature requested.\n- **🟢 help wanted:** Specifically calls upon external open-source folks indicating the maintainers need assistance right here.\n- **🤝 good first issue:** Designates a relatively easy problem, usually set aside to encourage very junior developers to contribute.\n\n*Note:* Repository Admins can easily create custom labels with specific Hexadecimal coloring if needed (e.g., \"high-priority\", \"backend/database\")."
   },
   {
     "id": "q37",
     "feature": "How do I link an issue to a pull request?",
-    "description": "Auto-closing ticket mechanics based on pull requests.",
-    "keywords": ["link issue", "close issue automatically", "fixes issue identifier"],
-    "content": "Add this exact syntax in the PR description:\n\n```text\nFixes #issue-number\n```"
+    "description": "The magic syntax keywords to trigger auto-closing mechanics upon merge.",
+    "keywords": ["link issue", "close issue automatically", "fixes", "magic link words"],
+    "content": "GitHub possesses an incredible robotic feature that creates a direct hyper-link dependency between an Issue and a PR. Once the PR merges, it closes the Issue for you.\n\n**Steps:**\n1. Let's say you're fixing Issue #42 in the issue tracker.\n2. In your Pull Request's primary description box, type one of GitHub's magic trigger keywords exactly like this:\n\n```text\nFixes #42\nResolves #42\nCloses #42\n```\n3. GitHub's UI will visually hook them together. When an administrator clicks the green merge button on your PR, Issue #42 is instantly, effortlessly marked complete."
   },
   {
     "id": "q38",
     "feature": "How do I add a collaborator?",
-    "description": "Inviting users to code.",
+    "description": "Inviting users to be able to push code into your private/public repository.",
     "keywords": ["add collaborator", "invite user", "give access", "team member"],
-    "content": "1. Go to Settings → Collaborators\n2. Add username\n3. Send invite"
+    "content": "By default, no one else is legally allowed to push code into a repository you own. You have to explicitly send team invitations.\n\n**Steps to invite members:**\n1. Ensure you are the Owner of the repository.\n2. Click the **⚙️ Settings** tab.\n3. On the left sidebar list, click the **Collaborators** tab.\n4. (You might be prompted to verify your 2FA security or password to proceed.)\n5. Click the green **Add people** button.\n6. Enter your teammate's exact GitHub username, full name, or email address.\n7. Select them from the search, then click the **Add [username] to this repository** button.\n8. They will immediately receive an email link showing a pending invitation. They MUST click 'Accept' before they are allowed to actively push code."
   },
   {
     "id": "q39",
     "feature": "What happens when someone pushes code?",
-    "description": "Effect of teammates changing code.",
-    "keywords": ["someone pushes code", "collaborator push", "team changes"],
-    "content": "The remote branch updates. You can see the changes online and Must pull them to your local repository to maintain sync."
+    "description": "The exact effect of teammates changing shared code online, and how it impacts your machine locally.",
+    "keywords": ["someone pushes code", "collaborator push", "team changes", "update alert"],
+    "content": "If you are working alongside Developer Ben, and Ben successfully writes code and uses `git push` to send it up to the codebase online, several backend things occur:\n\n1. The remote GitHub repository updates perfectly with Ben's new snapshot.\n2. **However, your personal computer remains 100% blind to this event.** Your local code does not auto-update via magic. Your system still looks exactly like it did hours ago.\n\n**The Solution:**\nIf you try to run your own `git push` now, Git will yell at you and severely reject it, outputting an error complaining about \"non-fast-forward updates/remote contains work you do not have\".\n\nTo align realities, you **Must** stop, and run `git pull` from the terminal. This downloads Ben's file updates, safely merges them onto your computer side-by-side with your code, and gets you completely synced back up. Then you can safely push your own edits."
   },
   {
     "id": "q40",
     "feature": "How do I mention someone?",
-    "description": "Using syntax referencing.",
-    "keywords": ["mention someone", "tag a user", "call a person"],
-    "content": "Type the `@` symbol followed by their username:\n`@username`"
+    "description": "Using @ syntax referencing to quickly summon users to a conversation flow.",
+    "keywords": ["mention someone", "tag a user", "call a person", "ping user"],
+    "content": "Just like standard social media platforms (Twitter, Slack, Teams), GitHub features a robust mentioning system to draw instant attention from developers.\n\nWhenever you are typing inside an Issue, a Pull Request, or even a Commit description, type the standard `@` symbol immediately followed by their exact GitHub username.\n\nExample:  \nHey `@codingmaster99`, can you check my logic for the database call? I'm getting a timeout error.\n\nThis automatically pings the tagged user via a GitHub app notification bubble, an email alert, and provides a direct hyperlink right back to exactly where you tagged them."
   },
   {
     "id": "q41",
     "feature": "How do I review teammate code?",
-    "description": "Inspecting teammate pushes via PRs.",
-    "keywords": ["review team", "check teammate", "review code"],
-    "content": "1. Open pull request\n2. Review changes under Files Diff\n3. Comment or approve"
+    "description": "The formal responsibility process of inspecting teammate pushes effectively step-by-step via PRs.",
+    "keywords": ["review team", "check teammate", "review code", "peer review"],
+    "content": "Being tasked to review a teammate's code means taking on quality assurance responsibility and ensuring the application framework stays clean.\n\n**How to execute a professional review:**\n1. Navigate safely to their open **Pull Request**.\n2. Read their description text broadly to understand the context of what their feature actually sets out to do.\n3. Click carefully on the **Files changed** tab located below the title.\n4. Scan completely down the diffs:\n   - Check for syntax bugs or logic flaws.\n   - Ensure they followed correct file naming standards and style rules.\n   - Specifically search for glaring console.logs, commented-out dead code, or hardcoded API keys they forgot to delete.\n5. Click the `+` beside offending lines and type constructive requests to fix them.\n6. Finally, hit **Review changes** and mark it as 'Request Changes' (if bugs exist) or 'Approve' (if flawless)."
   },
   {
     "id": "q42",
     "feature": "What is the typical GitHub workflow?",
-    "description": "General life-cycle steps.",
-    "keywords": ["typical workflow", "standard workflow", "normal process", "steps flow"],
-    "content": "1. Clone repository\n2. Create branch\n3. Make changes\n4. Commit\n5. Push\n6. Create pull request\n7. Review and merge"
+    "description": "General life-cycle standard steps applied repetitively all over the software industry.",
+    "keywords": ["typical workflow", "standard workflow", "normal process", "steps flow", "routine"],
+    "content": "While highly complex software environments differ, 90% of basic GitHub development generally adheres to these 7 linear timeline steps, often called the standard PR workflow:\n\n1. **Clone** (`git clone`) – Copy repository code down locally.\n2. **Branch out** (`git checkout -b new-feature`) – Never write volatile code tightly onto `main`!\n3. **Code & Commit** (`git commit`) – Write programming loops, save snapshots repeatedly.\n4. **Sync with Team** (`git pull origin main`) – Mid-session update to avoid divergence conflicts.\n5. **Push Online** (`git push origin new-feature`) – Upload the entirety of the branch.\n6. **Open PR** (via GitHub.com) – Create a Pull Request pleading to merge these features.\n7. **Merge & Delete** – Admin approves the PR, code fuses with `main`, branch is discarded."
   },
   {
     "id": "q43",
     "feature": "How do I work with a team using GitHub?",
-    "description": "Best practices for multi-dev projects.",
-    "keywords": ["team work", "collaborate", "multiple people", "group coding"],
-    "content": "1. Use separate branches\n2. Commit regularly\n3. Create pull requests\n4. Review before merging"
+    "description": "Absolute best collaborative practices and rules for multi-dev software scaling projects.",
+    "keywords": ["team work", "collaborate", "multiple people", "group coding", "team strategies"],
+    "content": "Working effectively with 5 or 20 developers changes your approach. It requires stringent communication rule sets.\n\n**Golden Rules for Teams:**\n1. **Never EVER force push to `main`.** Most organizations strictly lock the main branch entirely, meaning the *only* physical way code accesses `main` is through reviewed PRs.\n2. **Isolate intensely via branches:** Even small typo fixes require branches. No rogue editing.\n3. **Commit cleanly & regularly:** Don't work invisibly for 6 days and drop a gargantuan 40-file megacommit; your reviewer will go insane checking it. Make small, logical, atomic commits.\n4. **Write stellar Commit Messages:** \"fixed bug\", \"updates\", \"omg it works\" are completely unacceptable logs on team setups. Use explicit format like: `Fix styling misalignment on mobile login screen`."
   },
   {
     "id": "q44",
     "feature": "What is feature branch workflow?",
-    "description": "Definition of feature branch methodology.",
-    "keywords": ["feature branch", "what is feature workflow", "branch logic"],
-    "content": "Each specific feature is developed in its own isolate branch before eventually merging back into main."
+    "description": "The formalized definition of the absolute most popular branching methodology.",
+    "keywords": ["feature branch", "what is feature workflow", "branch logic", "agile flow"],
+    "content": "The **Feature Branch Workflow** is vastly adopted across modern Agile development teams. \n\n**The Concept:**\nThe core idea dictates that all development for any new functional feature must strictly happen entirely inside a completely dedicated branch (instead of all devs sharing the same workspace). \n\n**The Rule:** \nIf you are assigned to hook up Google Sign-in to an app, you branch off `main` and name it `feature-google-auth`. You do ALL your coding strictly inside there. When finished, you issue a Pull Request merging it back.\n\nThis methodology highly guarantees that `main` permanently remains completely clean, unbreakable, and fully releasable if hotfixes are demanded suddenly. It fully supports Continuous Integration models safely."
   },
   {
     "id": "q45",
     "feature": "How do I avoid conflicts?",
-    "description": "Preempting merge issues.",
-    "keywords": ["avoid conflicts", "prevent merge issues", "no conflicts"],
-    "content": "1. Pull latest changes before starting work\n2. Use separate branches\n3. Commit frequently"
+    "description": "Safely preempting and circumventing catastrophic code merge disruption issues.",
+    "keywords": ["avoid conflicts", "prevent merge issues", "no conflicts", "safe merge"],
+    "content": "Merge conflicts are inevitable in massive teams, but following these key operational habits reduces them drastically by almost 90%.\n\n1. **Pull Constantly:** Start every single morning by running `git pull origin main` into whatever branch you're working in. The earlier you integrate other peoples' newly submitted code, the fewer giant surprise overlaps occur later.\n2. **Code modularly:** Try not to pile on top of each other. If possible, different developers should coordinate to edit different module files entirely. (e.g., You code the User settings `.jsx`, I'll code the Admin `.jsx`).\n3. **Limit massive refactoring spans:** If you spend two weeks entirely rewriting spacing configurations across 45 files, you are practically guaranteeing overlapping conflicts with any features pushed in the interim. Move fast."
   },
   {
     "id": "q46",
     "feature": "When should I pull vs push?",
-    "description": "The difference between the actions timing.",
+    "description": "Clarifying the procedural timing, execution loops, and difference between these primary actions.",
     "keywords": ["when pull", "when push", "order of push pull"],
-    "content": "**Pull** → before starting your daily work\n**Push** → after committing fresh changes"
+    "content": "Understanding the timeline order prevents painful rejection errors when attempting to manipulate the GitHub server.\n\n**PULL FIRST: The Start-of-Session Action**\n- You execute `git pull` as soon as you boot up your machine to launch VS Code.\n- You pull to get any fresh code updates from GitHub that your coworkers merged at 2 A.M. while you slept.\n- **Crucially:** You ALWAYS pull exactly prior to pushing. If you don't incorporate remote changes first, your subsequent push will violently fail with an \"Updates were rejected\" error.\n\n**PUSH LAST: The End-of-Session Action**\n- You execute `git push` ONLY after saving solid work locally utilizing `git commit`.\n- You push before you clock out for the day at 5 P.M. to establish a heavy cloud backup save state of your efforts in the master servers."
   },
   {
     "id": "q47",
     "feature": "How do I deploy using GitHub Pages?",
-    "description": "Configuring Pages output.",
-    "keywords": ["deploy", "host website", "github pages", "live site"],
-    "content": "1. Go to repository\n2. Click Settings\n3. Go to Pages\n4. Select branch (main)\n5. Click Save\n6. Your live site URL will appear"
+    "description": "Configuring public URL hosting output explicitly for free HTML UI rendering.",
+    "keywords": ["deploy", "host website", "github pages", "live site", "free hosting"],
+    "content": "GitHub Pages is an incredible, 100% free hosting service integrated seamlessly into GitHub. It serves standard static front-end code directly to the internet (`.html`, `.css`, and `.js`).\n\n*Note: It cannot run backend servers like PHP, Java, Python, or complete Node.js environments.*\n\n**Configuration Steps:**\n1. Go to your repository completely full of front-end web files (you must have an `index.html` file in the root directory).\n2. Click the **⚙️ Settings** tab.\n3. Scroll down the left configuration sidebar list and click **Pages**.\n4. Under the \"Build and deployment\" heading, look for the 'Source' selector. Set it to **Deploy from a branch**.\n5. Right underneath that, pick your primary live branch (usually `main` or `master`) and select `/ (root)` folder. Click **Save**.\n6. Wait precisely 1-2 minutes for the pipeline runner. Refresh the tab, and you'll see a green checkmark saying: *\"Your site is live at https://username.github.io/repository-name\"*\n7. Click the URL to explore your completely live internet website!"
   },
   {
     "id": "q48",
     "feature": "How do I fork a repository?",
-    "description": "Creating a personal copy of someone else's repository under your own account.",
+    "description": "Creating an entire standalone root-level copy of a repository outside your jurisdiction under your own profile.",
     "keywords": ["fork", "fork repository", "copy repo", "fork project", "forking", "contribute"],
-    "content": "1. Go to the repository you want to fork\n2. Click the **Fork** button at the top-right\n3. Select your account or organization\n4. GitHub will create a copy of the repository under your account"
+    "content": "**Forking** is the professional bedrock of all open-source coding. \n\nIf you discover an incredible open-source AI project online but lack admin/collaborator push permissions, you cannot write code directly to it. You must Fork it first. \n\nForking essentially takes a hammer and entirely duplicates their entire repository onto your individual account. You obtain full Admin powers over your specific new cloned copy.\n\n**Execution Steps:**\n1. Open up the specific repository you want to steal/contribute to (e.g., `facebook/react`).\n2. At the top-right top bar of the webpage interface, carefully click the **Fork** button. (It typically displays a number signifying how many others have copied it.)\n3. GitHub prompts you confirming destination parameters. Make sure 'Owner' is set to your individual username account.\n4. Toggle if you prefer copying simply the main branch (standard) or every single branch entirely.\n5. Click **Create Fork**.\n6. Now, completely clone YOUR new replicated fork URL (e.g. `your-username/react`), apply code changes pushing to your fork, and finally issue a Pull Request requesting the original owners to observe and ingest your modifications!"
   }
 ]
