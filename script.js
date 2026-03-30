@@ -86,9 +86,10 @@ async function initializeAI() {
 }
 
 // Generate the final markdown response based on the dataset entry
-function generateResponse(matchedEntry) {
+function generateResponse(matchedEntry, userQuery = "") {
     if (!matchedEntry) {
-        return "Sorry, I don't have information on that in my structured dataset. Please check GitHub Docs: [https://docs.github.com/](https://docs.github.com/)";
+        const searchUrl = `https://docs.github.com/en/search?query=${encodeURIComponent(userQuery)}`;
+        return `I couldn't find an exact match locally. However, you can find the latest and most accurate answer directly in the official GitHub Documentation here:\n\n[**Search results for "${userQuery}" on docs.github.com**](${searchUrl})`;
     }
     
     let response = `### ${matchedEntry.feature}\n\n`;
@@ -174,10 +175,10 @@ chatForm.addEventListener('submit', async (e) => {
         
         // If match threshold > 0.45 
         if (bestScore >= 0.45) {
-            const responseText = generateResponse(bestMatch);
+            const responseText = generateResponse(bestMatch, text);
             appendMessage(responseText, 'bot', true);
         } else {
-            appendMessage(generateResponse(null), 'bot', true);
+            appendMessage(generateResponse(null, text), 'bot', true);
         }
         
     } catch (err) {

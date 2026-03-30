@@ -48,7 +48,9 @@ def search_knowledge_base(user_question, kb_indexed, threshold=0.45):
 
 def generate_response(user_question, matched_entry):
     if not matched_entry:
-        return "Sorry, I don't have information on that. Please check GitHub Docs: [https://docs.github.com/](https://docs.github.com/)"
+        import urllib.parse
+        search_query = urllib.parse.quote(user_question or "")
+        return f"Sorry, I don't have information on that locally. However, you can find the complete answer directly from the official docs here:\n[**Search results for \\\"{user_question}\\\" on docs.github.com**](https://docs.github.com/en/search?query={search_query})"
     
     # We construct the response deterministically directly from the JSON
     # Since it's a structural knowledge base, we don't need a generative LLM 
